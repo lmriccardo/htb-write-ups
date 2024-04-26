@@ -1,0 +1,1043 @@
+.:
+total 0
+drwxrwxr-x 3 root root 3225 Aug 10  2022 bin
+lrwxrwxrwx 1 root root   13 Aug 10  2022 config -> ./var/config/
+drwxrwxr-x 2 root root 3091 Aug 10  2022 dev
+drwxrwxr-x 7 root root  926 Oct  1  2023 etc
+drwxrwxr-x 3 root root   31 Oct  1  2023 home
+drwxrwxr-x 2 root root    3 Oct  1  2023 image
+drwxrwxr-x 6 root root 2580 Aug 10  2022 lib
+-rw-rw-r-- 1 root root    0 Aug 10  2022 .lstripped
+lrwxrwxrwx 1 root root    8 Aug 10  2022 mnt -> /var/mnt
+drwxrwxr-x 2 root root    3 Aug 10  2022 overlay
+drwxrwxr-x 2 root root    3 Aug 10  2022 proc
+drwxrwxr-x 2 root root    3 Aug 10  2022 run
+lrwxrwxrwx 1 root root    4 Aug 10  2022 sbin -> /bin
+drwxrwxr-x 2 root root    3 Aug 10  2022 sys
+lrwxrwxrwx 1 root root    8 Aug 10  2022 tmp -> /var/tmp
+drwxrwxr-x 3 root root   28 Aug 10  2022 usr
+drwxrwxr-x 2 root root    3 Aug 10  2022 var
+
+./bin:
+total 19198
+-rwxrwxr-x 1 root root   12120 Aug 10  2022 11N_UDPserver
+lrwxrwxrwx 1 root root       7 Aug 10  2022 adduser -> busybox
+-rwxrwxr-x 1 root root   13896 Aug 10  2022 aipc_util
+lrwxrwxrwx 1 root root       7 Aug 10  2022 app -> Upgrade
+-rwxrwxr-x 1 root root     565 Aug 10  2022 app_wait
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ar -> busybox
+-rwxrwxr-x 1 root root   21512 Aug 10  2022 arp
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ash -> busybox
+-rwxrwxr-x 1 root root  124648 Aug 10  2022 auth
+lrwxrwxrwx 1 root root       7 Aug 10  2022 awk -> busybox
+-rwxrwxr-x 1 root root   55328 Aug 10  2022 axel
+drwxrwxr-x 2 root root      53 Aug 10  2022 backend
+lrwxrwxrwx 1 root root       7 Aug 10  2022 basename -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 bash -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 blkid -> busybox
+-rwxrwxr-x 1 root root   92248 Aug 10  2022 blkid2
+-rwxrwxr-x 1 root root  594832 Aug 10  2022 boa
+lrwxrwxrwx 1 root root       7 Aug 10  2022 boot -> Upgrade
+-rwxrwxr-x 1 root root   22540 Aug 10  2022 brctl
+-rwxrwxr-x 1 root root   66292 Aug 10  2022 bridge
+-rwxrwxr-x 1 root root  507180 Aug 10  2022 busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 bzip2 -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 cat -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 cfgc -> Upgrade
+lrwxrwxrwx 1 root root       7 Aug 10  2022 checkcfgc -> Upgrade
+lrwxrwxrwx 1 root root       7 Aug 10  2022 checklogo -> Upgrade
+-rwxrwxr-x 1 root root    2496 Aug 10  2022 checkomci
+lrwxrwxrwx 1 root root       7 Aug 10  2022 chgrp -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 chmod -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 chown -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 chroot -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 chvt -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 cmp -> busybox
+-rwxrwxr-x 1 root root  169696 Aug 10  2022 configd
+-rwxrwxr-x 1 root root   60296 Aug 10  2022 conntrack
+-rwxrwxr-x 1 root root  188935 Aug 10  2022 conntrackd
+-rwxrwxr-x 1 root root    3008 Aug 10  2022 consoleset
+lrwxrwxrwx 1 root root       7 Aug 10  2022 cp -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 crond -> busybox
+-rwxrwxr-x 1 root root  394460 Aug 10  2022 cupsd
+-rwxrwxr-x 1 root root   22392 Aug 10  2022 cups-lpd
+-rwxrwxr-x 1 root root  930552 Aug 10  2022 cwmpClient
+lrwxrwxrwx 1 root root       7 Aug 10  2022 date -> busybox
+-rwxrwxr-x 1 root root    5832 Aug 10  2022 dbg_tool
+lrwxrwxrwx 1 root root       7 Aug 10  2022 df -> busybox
+-rwxrwxr-x 1 root root  132680 Aug 10  2022 dhclient
+-rwxrwxr-x 1 root root  375128 Aug 10  2022 dhcpd
+-rwxrwxr-x 1 root root   24984 Aug 10  2022 dhcrelayV6
+-rwxrwxr-x 1 root root 2263668 Aug 10  2022 diag
+lrwxrwxrwx 1 root root       7 Aug 10  2022 diff -> busybox
+-rwxrwxr-x 1 root root  154312 Aug 10  2022 dnsmasq
+-rwxrwxr-x 1 root root   12536 Aug 10  2022 dot11k_deamon
+-rwxrwxr-x 1 root root  107256 Aug 10  2022 ebtables
+lrwxrwxrwx 1 root root       7 Aug 10  2022 echo -> busybox
+-rwxrwxr-x 1 root root   46392 Aug 10  2022 ecmh
+lrwxrwxrwx 1 root root       7 Aug 10  2022 egrep -> busybox
+-rwxrwxr-x 1 root root  375764 Aug 10  2022 eponoamd
+-rwxrwxr-x 1 root root   11687 Aug 10  2022 ethctl
+-rwxrwxr-x 1 root root  208632 Aug 10  2022 europacli
+-rwxrwxr-x 1 root root   48584 Aug 10  2022 exfatfsck
+-rwxrwxr-x 1 root root   47000 Aug 10  2022 exfatlabel
+lrwxrwxrwx 1 root root       7 Aug 10  2022 expr -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 fgconsole -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 fgrep -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 find -> busybox
+-rwxrwxr-x 1 root root  137904 Aug 10  2022 flash
+-rwxrwxr-x 1 root root   33704 Aug 10  2022 flash_erase
+-rwxrwxr-x 1 root root     150 Aug 10  2022 flash_eraseall
+lrwxrwxrwx 1 root root       7 Aug 10  2022 free -> busybox
+-rwxrwxr-x 1 root root   81448 Aug 10  2022 ftp
+-rwxrwxr-x 1 root root   59224 Aug 10  2022 ftpd
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ftpget -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ftpput -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 fuser -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 getopt -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 getty -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 grep -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 gunzip -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 gzip -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 halt -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 hdv_auth -> Upgrade
+lrwxrwxrwx 1 root root       7 Aug 10  2022 hdv_auth_status -> Upgrade
+lrwxrwxrwx 1 root root       7 Aug 10  2022 head -> busybox
+-rwxrwxr-x 1 root root   94632 Aug 10  2022 hle_entity
+-rwxrwxr-x 1 root root  137276 Aug 10  2022 hsinfo
+lrwxrwxrwx 1 root root       7 Aug 10  2022 id -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ifconfig -> busybox
+-rwxrwxr-x 1 root root   45464 Aug 10  2022 igmpproxy
+-rwxrwxr-x 1 root root    8440 Aug 10  2022 inetd
+lrwxrwxrwx 1 root root       7 Aug 10  2022 init -> busybox
+-rwxrwxr-x 1 root root    2296 Aug 10  2022 initRGapi
+lrwxrwxrwx 1 root root       7 Aug 10  2022 insmod -> busybox
+-rwxrwxr-x 1 root root  346944 Aug 10  2022 ip
+lrwxrwxrwx 1 root root      13 Aug 10  2022 ip6tables -> xtables-multi
+lrwxrwxrwx 1 root root      13 Aug 10  2022 iptables -> xtables-multi
+-rwxrwxr-x 1 root root   33088 Aug 10  2022 iwcontrol
+-rwxrwxr-x 1 root root   17168 Aug 10  2022 iwpriv
+lrwxrwxrwx 1 root root       7 Aug 10  2022 kill -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 killall -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 klogd -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 linuxrc -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ln -> busybox
+-rwxrwxr-x 1 root root  122392 Aug 10  2022 loadconfig
+lrwxrwxrwx 1 root root       7 Aug 10  2022 logger -> busybox
+-rwxrwxr-x 1 root root    5992 Aug 10  2022 login
+lrwxrwxrwx 1 root root       7 Aug 10  2022 logo -> Upgrade
+-rwxrwxr-x 1 root root   11080 Aug 10  2022 lp
+-rwxrwxr-x 1 root root   16796 Aug 10  2022 lpadmin
+-rwxrwxr-x 1 root root   24244 Aug 10  2022 lpstat
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ls -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 lsmod -> busybox
+-rwxrwxr-x 1 root root    5595 Aug 10  2022 map_checker
+-rwxrwxr-x 1 root root   95884 Aug 10  2022 map_controller
+-rwxrwxr-x 1 root root   48504 Aug 10  2022 map_controller_test
+lrwxrwxrwx 1 root root       7 Aug 10  2022 md5sum -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mdev -> busybox
+-rwxrwxr-x 1 root root    5848 Aug 10  2022 mfcv6d
+-rwxrwxr-x 1 root root  132668 Aug 10  2022 mib
+-rwxrwxr-x 1 root root   43628 Aug 10  2022 mini_upnpd
+-rwxrwxr-x 1 root root   80168 Aug 10  2022 miniupnpd
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mkdir -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mkdosfs -> busybox
+-rwxrwxr-x 1 root root   59368 Aug 10  2022 mkexfatfs
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mkfs.vfat -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mknod -> busybox
+-rwxrwxr-x 1 root root   94664 Aug 10  2022 mkntfs
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mount -> busybox
+-rwxrwxr-x 1 root root   53768 Aug 10  2022 mount.exfat
+-rwxrwxr-x 1 root root    3576 Aug 10  2022 mpctl
+lrwxrwxrwx 1 root root       7 Aug 10  2022 mv -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 nc -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 netstat -> busybox
+-rwxrwxr-x 1 root root   17720 Aug 10  2022 nfct
+lrwxrwxrwx 1 root root       7 Aug 10  2022 nice -> busybox
+lrwxrwxrwx 1 root root      15 Aug 10  2022 nmbd -> samba_multicall
+-rwxrwxr-x 1 root root  146552 Aug 10  2022 ntfs-3g
+-rwxrwxr-x 1 root root   23224 Aug 10  2022 ntfslabel
+-rwxrwxr-x 1 root root   16192 Aug 10  2022 nv
+-rwxrwxr-x 1 root root   23048 Aug 10  2022 oamcli
+-rwxrwxr-x 1 root root  134348 Aug 10  2022 omci_app
+-rwxrwxr-x 1 root root   17000 Aug 10  2022 omcicli
+lrwxrwxrwx 1 root root       7 Aug 10  2022 pidof -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ping -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ping6 -> busybox
+-rwxrwxr-x 1 root root    3832 Aug 10  2022 pondetect
+lrwxrwxrwx 1 root root       7 Aug 10  2022 poweroff -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ps -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 pwd -> busybox
+-rwxrwxr-x 1 root root    3912 Aug 10  2022 qc
+-rwxrwxr-x 1 root root  103908 Aug 10  2022 radvd
+-rwxrwxr-x 1 root root   23388 Aug 10  2022 radvdump
+-rwxrwxr-x 1 root root   13736 Aug 10  2022 ramonitor
+lrwxrwxrwx 1 root root       7 Aug 10  2022 readlink -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 reboot -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 renice -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 rm -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 rmmod -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 route -> busybox
+-rwxrwxr-x 1 root root   44696 Aug 10  2022 routed
+-rwxrwxr-x 1 root root   27528 Aug 10  2022 rtkbosa
+-rwxrwxr-x 1 root root 8266136 Aug 10  2022 samba_multicall
+-rwxrwxr-x 1 root root  123044 Aug 10  2022 saveconfig
+lrwxrwxrwx 1 root root       7 Aug 10  2022 sed -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 seq -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 sh -> busybox
+-rwxrwxr-x 1 root root    3055 Aug 10  2022 ShowStatus
+lrwxrwxrwx 1 root root       7 Aug 10  2022 sleep -> busybox
+-rwxrwxr-x 1 root root   10264 Aug 10  2022 slogd
+lrwxrwxrwx 1 root root      15 Aug 10  2022 smbd -> samba_multicall
+lrwxrwxrwx 1 root root      15 Aug 10  2022 smbpasswd -> samba_multicall
+-rwxrwxr-x 1 root root   46408 Aug 10  2022 smuxctl
+-rwxrwxr-x 1 root root   13432 Aug 10  2022 spppctl
+-rwxrwxr-x 1 root root  134536 Aug 10  2022 spppd
+-rwxrwxr-x 1 root root    8040 Aug 10  2022 startcupsd
+-rwxrwxr-x 1 root root   22128 Aug 10  2022 startup
+lrwxrwxrwx 1 root root       7 Aug 10  2022 stty -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 sync -> busybox
+-rwxrwxr-x 1 root root   11688 Aug 10  2022 sysconf
+lrwxrwxrwx 1 root root       7 Aug 10  2022 sysctl -> busybox
+-rwxrwxr-x 1 root root   33480 Aug 10  2022 systemd
+lrwxrwxrwx 1 root root       7 Aug 10  2022 tail -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 tar -> busybox
+-rwxrwxr-x 1 root root  311172 Aug 10  2022 tc
+lrwxrwxrwx 1 root root       7 Aug 10  2022 telnetd -> busybox
+-rwxrwxr-x 1 root root   29839 Aug 10  2022 tftp
+-rwxrwxr-x 1 root root   12824 Aug 10  2022 tftpd
+-rwxr-xr-x 1 root root  142736 Aug 10  2022 threadtest
+lrwxrwxrwx 1 root root       7 Aug 10  2022 top -> busybox
+-rwxrwxr-x 1 root root     209 Aug 10  2022 top_bg_chk
+lrwxrwxrwx 1 root root       7 Aug 10  2022 touch -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 tr -> busybox
+-rwxrwxr-x 1 root root    7304 Aug 10  2022 tr142_app
+lrwxrwxrwx 1 root root       7 Aug 10  2022 traceroute -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 traceroute6 -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubiattach -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubidetach -> busybox
+-rwxrwxr-x 1 root root   76100 Aug 10  2022 ubiformat
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubimkvol -> busybox
+-rwxrwxr-x 1 root root   32400 Aug 10  2022 ubinfo
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubirmvol -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubirsvol -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 ubiupdatevol -> busybox
+-rwxrwxr-x 1 root root   36008 Aug 10  2022 udhcpc
+-rwxrwxr-x 1 root root   49544 Aug 10  2022 udhcpd
+-rwxrwxr-x 1 root root    8600 Aug 10  2022 udpechoserver
+lrwxrwxrwx 1 root root       7 Aug 10  2022 umount -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 uname -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 uncompress -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 unzip -> busybox
+-rwxrwxr-x 1 root root   30668 Aug 10  2022 updatedd
+-rwxrwxr-x 1 root root    2968 Aug 10  2022 updateddctrl
+-rwxrwxr-x 1 root root   13539 Aug 10  2022 Upgrade
+-rwxrwxr-x 1 root root    7671 Aug 10  2022 upnpctrl
+-rwxrwxr-x 1 root root    6072 Aug 10  2022 usbmount
+lrwxrwxrwx 1 root root       7 Aug 10  2022 usleep -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 vconfig -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 vi -> busybox
+-rwxrwxr-x 1 root root   15207 Aug 10  2022 vsntp
+lrwxrwxrwx 1 root root       7 Aug 10  2022 wc -> busybox
+lrwxrwxrwx 1 root root       7 Aug 10  2022 which -> busybox
+-rwxrwxr-x 1 root root  258984 Aug 10  2022 wscd
+lrwxrwxrwx 1 root root       7 Aug 10  2022 xargs -> busybox
+-rwxrwxr-x 1 root root  420384 Aug 10  2022 xtables-multi
+lrwxrwxrwx 1 root root       7 Aug 10  2022 zcat -> busybox
+
+./bin/backend:
+total 103
+-rwxrwxr-x 1 root root 37816 Aug 10  2022 ipp
+-rwxrwxr-x 1 root root 41772 Aug 10  2022 lpd
+-rwxrwxr-x 1 root root 25324 Aug 10  2022 parallel
+
+./dev:
+total 0
+crw-r--r-- 1 root root 100,   0 Aug 10  2022 adsl0
+crw-r--r-- 1 root root 254,   0 Aug 10  2022 aipc_dev
+crw-r--r-- 1 root root  90,   4 Aug 10  2022 config
+crw-r--r-- 1 root root   5,   1 Aug 10  2022 console
+crw-r--r-- 1 root root   5,  64 Aug 10  2022 cua0
+crw-r--r-- 1 root root   5,  65 Aug 10  2022 cua1
+crw-r--r-- 1 root root 253,   0 Aug 10  2022 dsp_console
+crw-r--r-- 1 root root  10, 229 Aug 10  2022 fuse
+crw-r--r-- 1 root root   1,   2 Aug 10  2022 kmem
+crw-r--r-- 1 root root   1,   1 Aug 10  2022 mem
+crw-r--r-- 1 root root  90,   0 Aug 10  2022 mtd0
+crw-r--r-- 1 root root  90,   1 Aug 10  2022 mtd0ro
+crw-r--r-- 1 root root  90,   2 Aug 10  2022 mtd1
+crw-r--r-- 1 root root  90,   3 Aug 10  2022 mtd1ro
+crw-r--r-- 1 root root  90,   4 Aug 10  2022 mtd2
+crw-r--r-- 1 root root  90,   5 Aug 10  2022 mtd2ro
+crw-r--r-- 1 root root  90,   6 Aug 10  2022 mtd3
+crw-r--r-- 1 root root  90,   7 Aug 10  2022 mtd3ro
+crw-r--r-- 1 root root  90,   8 Aug 10  2022 mtd4
+crw-r--r-- 1 root root  90,   9 Aug 10  2022 mtd4ro
+crw-r--r-- 1 root root  90,  10 Aug 10  2022 mtd5
+crw-r--r-- 1 root root  90,  11 Aug 10  2022 mtd5ro
+crw-r--r-- 1 root root  90,  12 Aug 10  2022 mtd6
+crw-r--r-- 1 root root  90,  13 Aug 10  2022 mtd6ro
+crw-r--r-- 1 root root  90,  14 Aug 10  2022 mtd7
+crw-r--r-- 1 root root  90,  15 Aug 10  2022 mtd7ro
+brw-r--r-- 1 root root  31,   0 Aug 10  2022 mtdblock0
+brw-r--r-- 1 root root  31,   1 Aug 10  2022 mtdblock1
+brw-r--r-- 1 root root  31,   2 Aug 10  2022 mtdblock2
+brw-r--r-- 1 root root  31,   3 Aug 10  2022 mtdblock3
+brw-r--r-- 1 root root  31,   4 Aug 10  2022 mtdblock4
+brw-r--r-- 1 root root  31,   5 Aug 10  2022 mtdblock5
+brw-r--r-- 1 root root  31,   6 Aug 10  2022 mtdblock6
+brw-r--r-- 1 root root  31,   7 Aug 10  2022 mtdblock7
+crw-r--r-- 1 root root   1,   3 Aug 10  2022 null
+crw-r--r-- 1 root root 108,   0 Aug 10  2022 ppp
+crw-r--r-- 1 root root   2,   0 Aug 10  2022 ptyp0
+crw-r--r-- 1 root root   2,   1 Aug 10  2022 ptyp1
+crw-r--r-- 1 root root   2,   2 Aug 10  2022 ptyp2
+crw-r--r-- 1 root root   2,   3 Aug 10  2022 ptyp3
+crw-r--r-- 1 root root   2,   4 Aug 10  2022 ptyp4
+crw-r--r-- 1 root root   2,   5 Aug 10  2022 ptyp5
+crw-r--r-- 1 root root   2,   6 Aug 10  2022 ptyp6
+crw-r--r-- 1 root root   2,   7 Aug 10  2022 ptyp7
+crw-r--r-- 1 root root   2,   8 Aug 10  2022 ptyp8
+crw-r--r-- 1 root root   2,   9 Aug 10  2022 ptyp9
+crw-r--r-- 1 root root   2,  10 Aug 10  2022 ptypa
+crw-r--r-- 1 root root   2,  11 Aug 10  2022 ptypb
+crw-r--r-- 1 root root   2,  12 Aug 10  2022 ptypc
+crw-r--r-- 1 root root   2,  13 Aug 10  2022 ptypd
+crw-r--r-- 1 root root   2,  14 Aug 10  2022 ptype
+crw-r--r-- 1 root root   2,  15 Aug 10  2022 ptypf
+brw-r--r-- 1 root root   1,   0 Aug 10  2022 ram0
+brw-r--r-- 1 root root   1,   1 Aug 10  2022 ram1
+crw-r--r-- 1 root root   1,   8 Aug 10  2022 random
+brw-r--r-- 1 root root  31,   0 Aug 10  2022 rom0
+brw-r--r-- 1 root root  31,   1 Aug 10  2022 rom1
+brw-r--r-- 1 root root  31,   2 Aug 10  2022 rom2
+brw-r--r-- 1 root root  31,   3 Aug 10  2022 rom3
+brw-r--r-- 1 root root  31,   4 Aug 10  2022 rom4
+brw-r--r-- 1 root root  31,   5 Aug 10  2022 rom5
+brw-r--r-- 1 root root  31,   6 Aug 10  2022 rom6
+brw-r--r-- 1 root root  31,   7 Aug 10  2022 rom7
+brw-r--r-- 1 root root  31,   8 Aug 10  2022 rom8
+brw-r--r-- 1 root root  31,   9 Aug 10  2022 rom9
+crw-r--r-- 1 root root  14,   0 Aug 10  2022 rtl_mdio
+crw-r--r-- 1 root root  14,   0 Aug 10  2022 rtl_nfbi
+brw-r--r-- 1 root root   8,   0 Aug 10  2022 sda
+brw-r--r-- 1 root root   8,   1 Aug 10  2022 sda1
+brw-r--r-- 1 root root   8,  10 Aug 10  2022 sda10
+brw-r--r-- 1 root root   8,  11 Aug 10  2022 sda11
+brw-r--r-- 1 root root   8,  12 Aug 10  2022 sda12
+brw-r--r-- 1 root root   8,  13 Aug 10  2022 sda13
+brw-r--r-- 1 root root   8,  14 Aug 10  2022 sda14
+brw-r--r-- 1 root root   8,  15 Aug 10  2022 sda15
+brw-r--r-- 1 root root   8,   2 Aug 10  2022 sda2
+brw-r--r-- 1 root root   8,   3 Aug 10  2022 sda3
+brw-r--r-- 1 root root   8,   4 Aug 10  2022 sda4
+brw-r--r-- 1 root root   8,   5 Aug 10  2022 sda5
+brw-r--r-- 1 root root   8,   6 Aug 10  2022 sda6
+brw-r--r-- 1 root root   8,   7 Aug 10  2022 sda7
+brw-r--r-- 1 root root   8,   8 Aug 10  2022 sda8
+brw-r--r-- 1 root root   8,   9 Aug 10  2022 sda9
+brw-r--r-- 1 root root   8,  16 Aug 10  2022 sdb
+brw-r--r-- 1 root root   8,  17 Aug 10  2022 sdb1
+brw-r--r-- 1 root root   8,  26 Aug 10  2022 sdb10
+brw-r--r-- 1 root root   8,  27 Aug 10  2022 sdb11
+brw-r--r-- 1 root root   8,  28 Aug 10  2022 sdb12
+brw-r--r-- 1 root root   8,  29 Aug 10  2022 sdb13
+brw-r--r-- 1 root root   8,  30 Aug 10  2022 sdb14
+brw-r--r-- 1 root root   8,  31 Aug 10  2022 sdb15
+brw-r--r-- 1 root root   8,  18 Aug 10  2022 sdb2
+brw-r--r-- 1 root root   8,  19 Aug 10  2022 sdb3
+brw-r--r-- 1 root root   8,  20 Aug 10  2022 sdb4
+brw-r--r-- 1 root root   8,  21 Aug 10  2022 sdb5
+brw-r--r-- 1 root root   8,  22 Aug 10  2022 sdb6
+brw-r--r-- 1 root root   8,  23 Aug 10  2022 sdb7
+brw-r--r-- 1 root root   8,  24 Aug 10  2022 sdb8
+brw-r--r-- 1 root root   8,  25 Aug 10  2022 sdb9
+brw-r--r-- 1 root root   8,  32 Aug 10  2022 sdc
+brw-r--r-- 1 root root   8,  33 Aug 10  2022 sdc1
+brw-r--r-- 1 root root   8,  42 Aug 10  2022 sdc10
+brw-r--r-- 1 root root   8,  43 Aug 10  2022 sdc11
+brw-r--r-- 1 root root   8,  44 Aug 10  2022 sdc12
+brw-r--r-- 1 root root   8,  45 Aug 10  2022 sdc13
+brw-r--r-- 1 root root   8,  46 Aug 10  2022 sdc14
+brw-r--r-- 1 root root   8,  47 Aug 10  2022 sdc15
+brw-r--r-- 1 root root   8,  34 Aug 10  2022 sdc2
+brw-r--r-- 1 root root   8,  35 Aug 10  2022 sdc3
+brw-r--r-- 1 root root   8,  36 Aug 10  2022 sdc4
+brw-r--r-- 1 root root   8,  37 Aug 10  2022 sdc5
+brw-r--r-- 1 root root   8,  38 Aug 10  2022 sdc6
+brw-r--r-- 1 root root   8,  39 Aug 10  2022 sdc7
+brw-r--r-- 1 root root   8,  40 Aug 10  2022 sdc8
+brw-r--r-- 1 root root   8,  41 Aug 10  2022 sdc9
+brw-r--r-- 1 root root   8,  48 Aug 10  2022 sdd
+brw-r--r-- 1 root root   8,  49 Aug 10  2022 sdd1
+brw-r--r-- 1 root root   8,  58 Aug 10  2022 sdd10
+brw-r--r-- 1 root root   8,  59 Aug 10  2022 sdd11
+brw-r--r-- 1 root root   8,  60 Aug 10  2022 sdd12
+brw-r--r-- 1 root root   8,  61 Aug 10  2022 sdd13
+brw-r--r-- 1 root root   8,  62 Aug 10  2022 sdd14
+brw-r--r-- 1 root root   8,  63 Aug 10  2022 sdd15
+brw-r--r-- 1 root root   8,  50 Aug 10  2022 sdd2
+brw-r--r-- 1 root root   8,  51 Aug 10  2022 sdd3
+brw-r--r-- 1 root root   8,  52 Aug 10  2022 sdd4
+brw-r--r-- 1 root root   8,  53 Aug 10  2022 sdd5
+brw-r--r-- 1 root root   8,  54 Aug 10  2022 sdd6
+brw-r--r-- 1 root root   8,  55 Aug 10  2022 sdd7
+brw-r--r-- 1 root root   8,  56 Aug 10  2022 sdd8
+brw-r--r-- 1 root root   8,  57 Aug 10  2022 sdd9
+brw-r--r-- 1 root root   8,  64 Aug 10  2022 sde
+brw-r--r-- 1 root root   8,  65 Aug 10  2022 sde1
+brw-r--r-- 1 root root   8,  74 Aug 10  2022 sde10
+brw-r--r-- 1 root root   8,  75 Aug 10  2022 sde11
+brw-r--r-- 1 root root   8,  76 Aug 10  2022 sde12
+brw-r--r-- 1 root root   8,  77 Aug 10  2022 sde13
+brw-r--r-- 1 root root   8,  78 Aug 10  2022 sde14
+brw-r--r-- 1 root root   8,  79 Aug 10  2022 sde15
+brw-r--r-- 1 root root   8,  66 Aug 10  2022 sde2
+brw-r--r-- 1 root root   8,  67 Aug 10  2022 sde3
+brw-r--r-- 1 root root   8,  68 Aug 10  2022 sde4
+brw-r--r-- 1 root root   8,  69 Aug 10  2022 sde5
+brw-r--r-- 1 root root   8,  70 Aug 10  2022 sde6
+brw-r--r-- 1 root root   8,  71 Aug 10  2022 sde7
+brw-r--r-- 1 root root   8,  72 Aug 10  2022 sde8
+brw-r--r-- 1 root root   8,  73 Aug 10  2022 sde9
+brw-r--r-- 1 root root   8,  80 Aug 10  2022 sdf
+brw-r--r-- 1 root root   8,  81 Aug 10  2022 sdf1
+brw-r--r-- 1 root root   8,  90 Aug 10  2022 sdf10
+brw-r--r-- 1 root root   8,  91 Aug 10  2022 sdf11
+brw-r--r-- 1 root root   8,  92 Aug 10  2022 sdf12
+brw-r--r-- 1 root root   8,  93 Aug 10  2022 sdf13
+brw-r--r-- 1 root root   8,  94 Aug 10  2022 sdf14
+brw-r--r-- 1 root root   8,  95 Aug 10  2022 sdf15
+brw-r--r-- 1 root root   8,  82 Aug 10  2022 sdf2
+brw-r--r-- 1 root root   8,  83 Aug 10  2022 sdf3
+brw-r--r-- 1 root root   8,  84 Aug 10  2022 sdf4
+brw-r--r-- 1 root root   8,  85 Aug 10  2022 sdf5
+brw-r--r-- 1 root root   8,  86 Aug 10  2022 sdf6
+brw-r--r-- 1 root root   8,  87 Aug 10  2022 sdf7
+brw-r--r-- 1 root root   8,  88 Aug 10  2022 sdf8
+brw-r--r-- 1 root root   8,  89 Aug 10  2022 sdf9
+brw-r--r-- 1 root root   8,  96 Aug 10  2022 sdg
+brw-r--r-- 1 root root   8,  97 Aug 10  2022 sdg1
+brw-r--r-- 1 root root   8, 106 Aug 10  2022 sdg10
+brw-r--r-- 1 root root   8, 107 Aug 10  2022 sdg11
+brw-r--r-- 1 root root   8, 108 Aug 10  2022 sdg12
+brw-r--r-- 1 root root   8, 109 Aug 10  2022 sdg13
+brw-r--r-- 1 root root   8, 110 Aug 10  2022 sdg14
+brw-r--r-- 1 root root   8, 111 Aug 10  2022 sdg15
+brw-r--r-- 1 root root   8,  98 Aug 10  2022 sdg2
+brw-r--r-- 1 root root   8,  99 Aug 10  2022 sdg3
+brw-r--r-- 1 root root   8, 100 Aug 10  2022 sdg4
+brw-r--r-- 1 root root   8, 101 Aug 10  2022 sdg5
+brw-r--r-- 1 root root   8, 102 Aug 10  2022 sdg6
+brw-r--r-- 1 root root   8, 103 Aug 10  2022 sdg7
+brw-r--r-- 1 root root   8, 104 Aug 10  2022 sdg8
+brw-r--r-- 1 root root   8, 105 Aug 10  2022 sdg9
+brw-r--r-- 1 root root   8, 112 Aug 10  2022 sdh
+brw-r--r-- 1 root root   8, 113 Aug 10  2022 sdh1
+brw-r--r-- 1 root root   8, 122 Aug 10  2022 sdh10
+brw-r--r-- 1 root root   8, 123 Aug 10  2022 sdh11
+brw-r--r-- 1 root root   8, 124 Aug 10  2022 sdh12
+brw-r--r-- 1 root root   8, 125 Aug 10  2022 sdh13
+brw-r--r-- 1 root root   8, 126 Aug 10  2022 sdh14
+brw-r--r-- 1 root root   8, 127 Aug 10  2022 sdh15
+brw-r--r-- 1 root root   8, 114 Aug 10  2022 sdh2
+brw-r--r-- 1 root root   8, 115 Aug 10  2022 sdh3
+brw-r--r-- 1 root root   8, 116 Aug 10  2022 sdh4
+brw-r--r-- 1 root root   8, 117 Aug 10  2022 sdh5
+brw-r--r-- 1 root root   8, 118 Aug 10  2022 sdh6
+brw-r--r-- 1 root root   8, 119 Aug 10  2022 sdh7
+brw-r--r-- 1 root root   8, 120 Aug 10  2022 sdh8
+brw-r--r-- 1 root root   8, 121 Aug 10  2022 sdh9
+crw-r--r-- 1 root root   5,   0 Aug 10  2022 tty
+crw-r--r-- 1 root root   4,   0 Aug 10  2022 tty0
+crw-r--r-- 1 root root   4,   1 Aug 10  2022 tty1
+crw-r--r-- 1 root root   4,   2 Aug 10  2022 tty2
+crw-r--r-- 1 root root   4,   3 Aug 10  2022 tty3
+crw-r--r-- 1 root root   3,   0 Aug 10  2022 ttyp0
+crw-r--r-- 1 root root   3,   1 Aug 10  2022 ttyp1
+crw-r--r-- 1 root root   3,   2 Aug 10  2022 ttyp2
+crw-r--r-- 1 root root   3,   3 Aug 10  2022 ttyp3
+crw-r--r-- 1 root root   3,   4 Aug 10  2022 ttyp4
+crw-r--r-- 1 root root   3,   5 Aug 10  2022 ttyp5
+crw-r--r-- 1 root root   3,   6 Aug 10  2022 ttyp6
+crw-r--r-- 1 root root   3,   7 Aug 10  2022 ttyp7
+crw-r--r-- 1 root root   3,   8 Aug 10  2022 ttyp8
+crw-r--r-- 1 root root   3,   9 Aug 10  2022 ttyp9
+crw-r--r-- 1 root root   3,  10 Aug 10  2022 ttypa
+crw-r--r-- 1 root root   3,  11 Aug 10  2022 ttypb
+crw-r--r-- 1 root root   3,  12 Aug 10  2022 ttypc
+crw-r--r-- 1 root root   3,  13 Aug 10  2022 ttypd
+crw-r--r-- 1 root root   3,  14 Aug 10  2022 ttype
+crw-r--r-- 1 root root   3,  15 Aug 10  2022 ttypf
+crw-r--r-- 1 root root   4,  64 Aug 10  2022 ttyS0
+crw-r--r-- 1 root root   4,  65 Aug 10  2022 ttyS1
+crw-r--r-- 1 root root 188,   0 Aug 10  2022 ttyUSB0
+crw-r--r-- 1 root root 188,   1 Aug 10  2022 ttyUSB1
+crw-r--r-- 1 root root 188,   2 Aug 10  2022 ttyUSB2
+crw-r--r-- 1 root root 188,   3 Aug 10  2022 ttyUSB3
+crw-r--r-- 1 root root 188,   4 Aug 10  2022 ttyUSB4
+crw-r--r-- 1 root root 188,   5 Aug 10  2022 ttyUSB5
+crw-r--r-- 1 root root 188,   6 Aug 10  2022 ttyUSB6
+crw-r--r-- 1 root root 188,   7 Aug 10  2022 ttyUSB7
+crw-r--r-- 1 root root 188,   8 Aug 10  2022 ttyUSB8
+crw-r--r-- 1 root root 188,   9 Aug 10  2022 ttyUSB9
+crw-r--r-- 1 root root 188,  10 Aug 10  2022 ttyUSBa
+crw-r--r-- 1 root root 188,  11 Aug 10  2022 ttyUSBb
+crw-r--r-- 1 root root 188,  12 Aug 10  2022 ttyUSBc
+crw-r--r-- 1 root root 188,  13 Aug 10  2022 ttyUSBd
+crw-r--r-- 1 root root 188,  14 Aug 10  2022 ttyUSBe
+crw-r--r-- 1 root root 188,  15 Aug 10  2022 ttyUSBf
+crw-r--r-- 1 root root   1,   9 Aug 10  2022 urandom
+crw-r--r-- 1 root root 180,   0 Aug 10  2022 usblp0
+crw-r--r-- 1 root root  13,   0 Aug 10  2022 wlchr
+crw-r--r-- 1 root root   1,   5 Aug 10  2022 zero
+
+./etc:
+total 149
+lrwxrwxrwx 1 root root    11 Aug 10  2022 config -> /var/config
+-rwxrwxr-x 1 root root   185 Aug 10  2022 config_default_hs.xml
+-rwxrwxr-x 1 root root 50538 Oct  1  2023 config_default.xml
+drwxrwxr-x 4 root root    40 Aug 10  2022 cups
+drwxrwxr-x 2 root root    40 Aug 10  2022 default
+-rwxrwxr-x 1 root root 17747 Aug 10  2022 dhclient-script
+-rwxrwxr-x 1 root root 18508 Aug 10  2022 dnsmasq.conf
+-rwxrwxr-x 1 root root  1146 Aug 10  2022 ethertypes
+-rw-rw-r-- 1 root root   637 Aug 10  2022 fstab
+lrwxrwxrwx 1 root root    10 Aug 10  2022 group -> /var/group
+-rw-rw-r-- 1 root root   127 Aug 10  2022 inetd.conf
+drwxrwxr-x 2 root root   143 Aug 10  2022 init.d
+-rwxrwxr-x 1 root root  1132 Aug 10  2022 inittab
+-rwxrwxr-x 1 root root  1218 Aug  9  2022 insdrv.sh
+-rwxrwxr-x 1 root root   112 Aug 10  2022 irf
+-rwxrwxr-x 1 root root   108 Aug 10  2022 mdev.conf
+drwxrwxr-x 2 root root   122 Aug 10  2022 modules-load.d
+-rwxrwxr-x 1 root root   353 Aug 10  2022 multiap.conf
+-rwxrwxr-x 1 root root   431 Aug  9  2022 omci_custom_opt.conf
+-rwxrwxr-x 1 root root   225 Aug  9  2022 omci_ignore_mib_tbl_10g.conf
+-rwxrwxr-x 1 root root   221 Aug  9  2022 omci_ignore_mib_tbl.conf
+-rwxrwxr-x 1 root root  7920 Aug  9  2022 omci_mib.cfg
+-rwxrwxr-x 1 root root   123 Aug 10  2022 orf
+lrwxrwxrwx 1 root root    11 Aug 10  2022 passwd -> /var/passwd
+lrwxrwxrwx 1 root root     8 Aug 10  2022 ppp -> /var/ppp
+-rwxrwxr-x 1 root root  1264 Aug 10  2022 profile
+-rw-rw-r-- 1 root root  2932 Aug 10  2022 protocols
+-rw-rw-r-- 1 root root  3381 Aug 10  2022 radvd.conf
+-rwxrwxr-x 1 root root  2857 Aug 10  2022 ramfs.img
+-rwxrwxr-x 1 root root  1186 Aug 10  2022 rc_boot_dsp
+-rwxrwxr-x 1 root root    72 Aug 10  2022 rc_log_dsp
+-rwxrwxr-x 1 root root   448 Aug 10  2022 rc_reset_dsp
+lrwxrwxrwx 1 root root    16 Aug 10  2022 resolv.conf -> /var/resolv.conf
+-rwxrwxr-x 1 root root   199 Aug  9  2022 rtk_tr142.sh
+-rwxrwxr-x 1 root root     0 Aug  9  2022 run_customized_sdk.sh
+-rwxrwxr-x 1 root root  1416 Aug  9  2022 runoam.sh
+-rwxrwxr-x 1 root root  7372 Aug  9  2022 runomci.sh
+-rwxrwxr-x 1 root root  1497 Aug  9  2022 runsdk.sh
+lrwxrwxrwx 1 root root    10 Aug 10  2022 samba -> /var/samba
+drwxrwxr-x 2 root root   626 Aug 10  2022 scripts
+-rwxrwxr-x 1 root root  8205 Aug 10  2022 services
+-rw-rw-r-- 1 root root   474 Aug 10  2022 setprmt_reject
+-rwxrwxr-x 1 root root    17 Aug 10  2022 shells
+-rwxrwxr-x 1 root root  6199 Aug 10  2022 simplecfgservice.xml
+-rwxrwxr-x 1 root root  1060 Aug 10  2022 smb.conf
+lrwxrwxrwx 1 root root     7 Aug 10  2022 TZ -> /var/TZ
+-rw-rw-r-- 1 root root    46 Aug 10  2022 version
+-rw-rw-r-- 1 root root   659 Oct  1  2023 version_info
+-rwxrwxr-x 1 root root  1706 Aug 10  2022 wscd.conf
+
+./etc/cups:
+total 0
+drwxrwxr-x 2 root root 69 Aug 10  2022 conf
+drwxrwxr-x 2 root root  3 Aug 10  2022 model
+
+./etc/cups/conf:
+total 17
+-rw-rw-r-- 1 root root 4741 Aug 10  2022 cupsd.conf
+-rw-rw-r-- 1 root root 4398 Aug 10  2022 mime.convs
+-rw-rw-r-- 1 root root 6705 Aug 10  2022 mime.types
+
+./etc/cups/model:
+total 0
+
+./etc/default:
+total 2
+-rw-rw-r-- 1 root root   93 Aug 10  2022 devpts
+-rw-rw-r-- 1 root root 1040 Aug 10  2022 rcS
+
+./etc/init.d:
+total 7
+-rwxr-xr-x 1 root root 586 Aug 10  2022 rc10
+-rwxr-xr-x 1 root root 544 Aug 10  2022 rc14
+-rwxr-xr-x 1 root root  14 Aug 10  2022 rc18
+-rwxr-xr-x 1 root root 660 Aug 10  2022 rc2
+-rwxr-xr-x 1 root root  16 Aug 10  2022 rc20
+-rwxr-xr-x 1 root root 206 Aug 10  2022 rc3
+-rwxr-xr-x 1 root root 183 Aug 10  2022 rc32
+-rwxr-xr-x 1 root root  43 Aug 10  2022 rc34
+-rwxr-xr-x 1 root root 148 Aug 10  2022 rc35
+-rwxr-xr-x 1 root root  21 Aug 10  2022 rc6
+-rwxrwxr-x 1 root root 209 Aug 10  2022 rcS
+
+./etc/modules-load.d:
+total 3
+-rw-rw-r-- 1 root root  6 Aug 10  2022 ca-ne.conf
+-rw-rw-r-- 1 root root 15 Aug 10  2022 ca-plat-kernel.conf
+-rw-rw-r-- 1 root root 10 Aug 10  2022 ca-sdk-cb.conf
+-rw-rw-r-- 1 root root  8 Aug 10  2022 cli-drv.conf
+-rw-rw-r-- 1 root root  8 Aug 10  2022 libscfg.conf
+
+./etc/scripts:
+total 39
+-rwxrwxr-x 1 root root  145 Aug 10  2022 board_init.sh
+-rwxrwxr-x 1 root root 3581 Aug 10  2022 checkroot.sh
+-rwxrwxr-x 1 root root  528 Aug 10  2022 devpts.sh
+lrwxrwxrwx 1 root root   10 Aug 10  2022 flash -> /bin/flash
+-rwxrwxr-x 1 root root  964 Aug 10  2022 fw_loaded.sh
+-rwxrwxr-x 1 root root 1586 Aug 10  2022 fwu_starter.sh
+-rwxrwxr-x 1 root root   98 Aug  9  2022 getmib
+-rwxrwxr-x 1 root root   98 Aug  9  2022 getmib1
+-rwxrwxr-x 1 root root  104 Aug  9  2022 ib
+-rwxrwxr-x 1 root root  104 Aug  9  2022 ib1
+-rwxrwxr-x 1 root root  105 Aug  9  2022 id
+-rwxrwxr-x 1 root root  105 Aug  9  2022 id1
+-rwxr-xr-x 1 root root 1009 Aug 10  2022 insert_europa.sh
+-rw-rw-r-- 1 root root  348 Aug 10  2022 ins_rtk_snooping_mod.sh
+-rwxrwxr-x 1 root root  111 Aug  9  2022 irf
+-rwxrwxr-x 1 root root  111 Aug  9  2022 irf1
+-rwxrwxr-x 1 root root  104 Aug  9  2022 iw
+-rwxrwxr-x 1 root root  104 Aug  9  2022 iw1
+-rwxrwxr-x 1 root root 2764 Aug 10  2022 mnt_cfgfs.sh
+-rwxrwxr-x 1 root root 9890 Aug 10  2022 modutils.sh
+-rwxrwxr-x 1 root root  115 Aug  9  2022 ob
+-rwxrwxr-x 1 root root  115 Aug  9  2022 ob1
+-rwxrwxr-x 1 root root  116 Aug  9  2022 od
+-rwxrwxr-x 1 root root  116 Aug  9  2022 od1
+-rwxrwxr-x 1 root root  122 Aug  9  2022 orf
+-rwxrwxr-x 1 root root  122 Aug  9  2022 orf1
+-rwxrwxr-x 1 root root  115 Aug  9  2022 ow
+-rwxrwxr-x 1 root root  115 Aug  9  2022 ow1
+-rwxrwxr-x 1 root root  142 Aug 10  2022 reset_default.sh
+-rwxrwxr-x 1 root root   10 Aug 10  2022 rps.sh
+-rwxrwxr-x 1 root root   48 Aug  9  2022 rssi
+-rwxrwxr-x 1 root root   48 Aug  9  2022 rssi1
+-rwxrwxr-x 1 root root  108 Aug  9  2022 setmib
+-rwxrwxr-x 1 root root  108 Aug  9  2022 setmib1
+-rwxrwxr-x 1 root root  529 Aug 10  2022 syn_pon_mode.sh
+-rwxrwxr-x 1 root root  834 Aug 10  2022 sysfs.sh
+-rwxrwxr-x 1 root root   39 Aug 10  2022 udhcpc.deconfig
+-rwxrwxr-x 1 root root  594 Aug 10  2022 udhcpc.sh
+-rwxrwxr-x 1 root root  349 Aug 10  2022 vm_tuning.sh
+
+./home:
+total 0
+drwxr-xr-x 2 root root 28 Oct  1  2023 .41fr3d0
+
+./home/.41fr3d0:
+total 1
+-rw-r--r-- 1 root root 13 Oct  1  2023 s.txt
+
+./image:
+total 0
+
+./lib:
+total 9434
+drwxrwxr-x 3 root root      50 Aug 10  2022 features
+lrwxrwxrwx 1 root root      19 Aug 10  2022 ld.so.0 -> ld-uClibc-0.9.33.so
+-rwxr-xr-x 1 root root   28984 Aug 10  2022 ld-uClibc-0.9.33.so
+lrwxrwxrwx 1 root root      14 Aug 10  2022 ld-uClibc.so -> ld-uClibc.so.0
+lrwxrwxrwx 1 root root      19 Aug 10  2022 ld-uClibc.so.0 -> ld-uClibc-0.9.33.so
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libblkid.so -> libblkid.so.1.1.0
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libblkid.so.1 -> libblkid.so.1.1.0
+-rwxr-xr-x 1 root root  297108 Aug 10  2022 libblkid.so.1.1.0
+lrwxrwxrwx 1 root root      14 Aug 10  2022 libcommon.so -> libcommon.so.1
+-rwxr-xr-x 1 root root  318252 Aug 10  2022 libcommon.so.1
+-rwxr-xr-x 1 root root   22644 Aug 10  2022 libcrypt-0.9.33.so
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libcrypto.so -> libcrypto.so.1.1
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libcrypto.so.1.0.0 -> libcrypto.so.1.1
+-rwxr-xr-x 1 root root 1764848 Aug 10  2022 libcrypto.so.1.1
+lrwxrwxrwx 1 root root      13 Aug 10  2022 libcrypt.so -> libcrypt.so.0
+lrwxrwxrwx 1 root root      18 Aug 10  2022 libcrypt.so.0 -> libcrypt-0.9.33.so
+lrwxrwxrwx 1 root root      19 Aug 10  2022 libc.so.0 -> libuClibc-0.9.33.so
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libcupsmime.so -> libcupsmime.so.1
+-rwxr-xr-x 1 root root   18336 Aug 10  2022 libcupsmime.so.1
+lrwxrwxrwx 1 root root      12 Aug 10  2022 libcups.so -> libcups.so.2
+-rwxr-xr-x 1 root root  308044 Aug 10  2022 libcups.so.2
+lrwxrwxrwx 1 root root      15 Aug 10  2022 libdhcpctl.so -> libdhcpctl.so.1
+-rwxr-xr-x 1 root root   15968 Aug 10  2022 libdhcpctl.so.1
+-rwxr-xr-x 1 root root   12492 Aug 10  2022 libdl-0.9.33.so
+lrwxrwxrwx 1 root root      10 Aug 10  2022 libdl.so -> libdl.so.0
+lrwxrwxrwx 1 root root      15 Aug 10  2022 libdl.so.0 -> libdl-0.9.33.so
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libdns.so -> libdns.so.169.0.2
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libdns.so.169 -> libdns.so.169.0.2
+-rwxr-xr-x 1 root root 2012924 Aug 10  2022 libdns.so.169.0.2
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libfuse.so -> libfuse.so.2.9.7
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libfuse.so.2 -> libfuse.so.2.9.7
+-rwxr-xr-x 1 root root  224768 Aug 10  2022 libfuse.so.2.9.7
+lrwxrwxrwx 1 root root      13 Aug 10  2022 libgcc.so -> libgcc_s.so.1
+lrwxrwxrwx 1 root root      13 Aug 10  2022 libgcc_s.so -> libgcc_s.so.1
+-rwxr-xr-x 1 root root   93400 Aug 10  2022 libgcc_s.so.1
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libirs.so -> libirs.so.160.0.3
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libirs.so.160 -> libirs.so.160.0.3
+-rwxr-xr-x 1 root root   34388 Aug 10  2022 libirs.so.160.0.3
+lrwxrwxrwx 1 root root      20 Aug 10  2022 libisccfg.so -> libisccfg.so.160.1.1
+lrwxrwxrwx 1 root root      20 Aug 10  2022 libisccfg.so.160 -> libisccfg.so.160.1.1
+-rwxr-xr-x 1 root root  122260 Aug 10  2022 libisccfg.so.160.1.1
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libisc.so -> libisc.so.166.2.0
+lrwxrwxrwx 1 root root      17 Aug 10  2022 libisc.so.166 -> libisc.so.166.2.0
+-rwxr-xr-x 1 root root  423652 Aug 10  2022 libisc.so.166.2.0
+-rwxr-xr-x 1 root root   93251 Aug 10  2022 libm-0.9.33.so
+-rwxr-xr-x 1 root root    5196 Aug 10  2022 libmd5.so
+lrwxrwxrwx 1 root root       9 Aug 10  2022 libmd5.so.0 -> libmd5.so
+-rwxr-xr-x 1 root root  533376 Aug 10  2022 libmib.so
+lrwxrwxrwx 1 root root       9 Aug 10  2022 libmib.so.0 -> libmib.so
+-rwxr-xr-x 1 root root   43452 Aug 10  2022 libmini_upnp.so
+-rwxr-xr-x 1 root root    1161 Aug 10  2022 libmnl.la
+lrwxrwxrwx 1 root root      15 Aug 10  2022 libmnl.so -> libmnl.so.0.2.0
+lrwxrwxrwx 1 root root      15 Aug 10  2022 libmnl.so.0 -> libmnl.so.0.2.0
+-rwxr-xr-x 1 root root   16692 Aug 10  2022 libmnl.so.0.2.0
+lrwxrwxrwx 1 root root       9 Aug 10  2022 libm.so -> libm.so.0
+lrwxrwxrwx 1 root root      14 Aug 10  2022 libm.so.0 -> libm-0.9.33.so
+-rwxr-xr-x 1 root root  385584 Aug 10  2022 libmultiap.so
+-rwxr-xr-x 1 root root    1394 Aug 10  2022 libnetfilter_conntrack.la
+lrwxrwxrwx 1 root root      31 Aug 10  2022 libnetfilter_conntrack.so -> libnetfilter_conntrack.so.3.7.0
+lrwxrwxrwx 1 root root      31 Aug 10  2022 libnetfilter_conntrack.so.3 -> libnetfilter_conntrack.so.3.7.0
+-rwxr-xr-x 1 root root  122632 Aug 10  2022 libnetfilter_conntrack.so.3.7.0
+-rwxr-xr-x 1 root root    1317 Aug 10  2022 libnetfilter_cthelper.la
+lrwxrwxrwx 1 root root      30 Aug 10  2022 libnetfilter_cthelper.so -> libnetfilter_cthelper.so.0.0.0
+lrwxrwxrwx 1 root root      30 Aug 10  2022 libnetfilter_cthelper.so.0 -> libnetfilter_cthelper.so.0.0.0
+-rwxr-xr-x 1 root root   10464 Aug 10  2022 libnetfilter_cthelper.so.0.0.0
+-rwxr-xr-x 1 root root    1321 Aug 10  2022 libnetfilter_cttimeout.la
+lrwxrwxrwx 1 root root      31 Aug 10  2022 libnetfilter_cttimeout.so -> libnetfilter_cttimeout.so.1.0.0
+lrwxrwxrwx 1 root root      31 Aug 10  2022 libnetfilter_cttimeout.so.1 -> libnetfilter_cttimeout.so.1.0.0
+-rwxr-xr-x 1 root root   12068 Aug 10  2022 libnetfilter_cttimeout.so.1.0.0
+-rwxr-xr-x 1 root root    1369 Aug 10  2022 libnetfilter_queue.la
+lrwxrwxrwx 1 root root      27 Aug 10  2022 libnetfilter_queue.so -> libnetfilter_queue.so.1.4.0
+lrwxrwxrwx 1 root root      27 Aug 10  2022 libnetfilter_queue.so.1 -> libnetfilter_queue.so.1.4.0
+-rwxr-xr-x 1 root root   20728 Aug 10  2022 libnetfilter_queue.so.1.4.0
+-rwxr-xr-x 1 root root    1196 Aug 10  2022 libnfnetlink.la
+lrwxrwxrwx 1 root root      21 Aug 10  2022 libnfnetlink.so -> libnfnetlink.so.0.2.0
+lrwxrwxrwx 1 root root      21 Aug 10  2022 libnfnetlink.so.0 -> libnfnetlink.so.0.2.0
+-rwxr-xr-x 1 root root   22760 Aug 10  2022 libnfnetlink.so.0.2.0
+-rwxr-xr-x 1 root root     869 Aug 10  2022 libnsl-0.9.33.so
+lrwxrwxrwx 1 root root      11 Aug 10  2022 libnsl.so -> libnsl.so.0
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libnsl.so.0 -> libnsl-0.9.33.so
+lrwxrwxrwx 1 root root      20 Aug 10  2022 libntfs-3g.so.87 -> libntfs-3g.so.87.0.0
+-rwxrwxr-x 1 root root  345972 Aug 10  2022 libntfs-3g.so.87.0.0
+lrwxrwxrwx 1 root root      13 Aug 10  2022 libomapi.so -> libomapi.so.1
+-rwxr-xr-x 1 root root  110656 Aug 10  2022 libomapi.so.1
+-rwxr-xr-x 1 root root   16640 Aug 10  2022 libomci_api.so
+-rwxr-xr-x 1 root root   11092 Aug 10  2022 libomci_fal.so
+-rwxr-xr-x 1 root root   28028 Aug 10  2022 libomci_gos.so
+-rwxr-xr-x 1 root root  245940 Aug 10  2022 libomci_mib.so
+-rwxr-xr-x 1 root root   12480 Aug 10  2022 libomci_voice.so
+-rwxr-xr-x 1 root root    4888 Aug 10  2022 libpr.so
+-rwxr-xr-x 1 root root   74552 Aug 10  2022 libpthread-0.9.33.so
+lrwxrwxrwx 1 root root      20 Aug 10  2022 libpthread.so.0 -> libpthread-0.9.33.so
+-rwxr-xr-x 1 root root     869 Aug 10  2022 libresolv-0.9.33.so
+lrwxrwxrwx 1 root root      14 Aug 10  2022 libresolv.so -> libresolv.so.0
+lrwxrwxrwx 1 root root      19 Aug 10  2022 libresolv.so.0 -> libresolv-0.9.33.so
+-rwxr-xr-x 1 root root   12520 Aug 10  2022 librt-0.9.33.so
+-rwxr-xr-x 1 root root 1182444 Aug 10  2022 librtk.so
+lrwxrwxrwx 1 root root      10 Aug 10  2022 librt.so -> librt.so.0
+lrwxrwxrwx 1 root root      15 Aug 10  2022 librt.so.0 -> librt-0.9.33.so
+-rwxr-xr-x 1 root root    4167 Aug 10  2022 libubacktrace-0.9.33.so
+lrwxrwxrwx 1 root root      18 Aug 10  2022 libubacktrace.so -> libubacktrace.so.0
+lrwxrwxrwx 1 root root      23 Aug 10  2022 libubacktrace.so.0 -> libubacktrace-0.9.33.so
+-rwxrwxr-x 1 root root  343668 Aug 10  2022 libuClibc-0.9.33.so
+-rw-rw-r-- 1 root root    6912 Aug 10  2022 libulockmgr.a
+-rw-rw-r-- 1 root root    1111 Aug 10  2022 libulockmgr.la
+-rwxr-xr-x 1 root root  257488 Aug 10  2022 libut.so
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libuuid.so -> libuuid.so.1.3.0
+lrwxrwxrwx 1 root root      16 Aug 10  2022 libuuid.so.1 -> libuuid.so.1.3.0
+-rwxr-xr-x 1 root root   15356 Aug 10  2022 libuuid.so.1.3.0
+drwxrwxr-x 4 root root     186 Aug 10  2022 modules
+drwxrwxr-x 2 root root    3326 Aug 10  2022 omci
+drwxrwxr-x 2 root root      69 Aug 10  2022 voip
+
+./lib/features:
+total 70
+drwxrwxr-x 2 root root   798 Aug 10  2022 internal
+-rwxrwxr-x 1 root root 71311 Aug 10  2022 libtr142.so
+
+./lib/features/internal:
+total 633
+-rwxrwxr-x 1 root root 17561 Aug 10  2022 bdp_00000001.so
+-rwxrwxr-x 1 root root 22451 Aug 10  2022 bdp_00000004.so
+-rwxrwxr-x 1 root root 17952 Aug 10  2022 bdp_00000008.so
+-rwxrwxr-x 1 root root 17531 Aug 10  2022 bdp_00000020.so
+-rwxrwxr-x 1 root root 18061 Aug 10  2022 bdp_00000040.so
+-rwxrwxr-x 1 root root 19035 Aug 10  2022 bdp_00000080.so
+-rwxrwxr-x 1 root root 17520 Aug 10  2022 bdp_00000100.so
+-rwxrwxr-x 1 root root 17539 Aug 10  2022 bdp_00000200.so
+-rwxrwxr-x 1 root root 19378 Aug 10  2022 bdp_00000400.so
+-rwxrwxr-x 1 root root 17713 Aug 10  2022 mc_00000001.so
+-rwxrwxr-x 1 root root 17561 Aug 10  2022 mc_00000002.so
+-rwxrwxr-x 1 root root 17562 Aug 10  2022 mc_00000004.so
+-rwxrwxr-x 1 root root 17538 Aug 10  2022 me_00000002.so
+-rwxrwxr-x 1 root root 17543 Aug 10  2022 me_00000004.so
+-rwxrwxr-x 1 root root 17626 Aug 10  2022 me_00000008.so
+-rwxrwxr-x 1 root root 17577 Aug 10  2022 me_00000010.so
+-rwxrwxr-x 1 root root 21617 Aug 10  2022 me_00000020.so
+-rwxrwxr-x 1 root root 19114 Aug 10  2022 me_00000040.so
+-rwxrwxr-x 1 root root 18189 Aug 10  2022 me_00000080.so
+-rwxrwxr-x 1 root root 17880 Aug 10  2022 me_00000100.so
+-rwxrwxr-x 1 root root 19229 Aug 10  2022 me_00000400.so
+-rwxrwxr-x 1 root root 18020 Aug 10  2022 me_00000800.so
+-rwxrwxr-x 1 root root 17514 Aug 10  2022 me_00001000.so
+-rwxrwxr-x 1 root root 18111 Aug 10  2022 me_00002000.so
+-rwxrwxr-x 1 root root 17699 Aug 10  2022 me_00004000.so
+-rwxrwxr-x 1 root root 17566 Aug 10  2022 me_00008000.so
+-rwxrwxr-x 1 root root 17967 Aug 10  2022 me_00010000.so
+-rwxrwxr-x 1 root root 18260 Aug 10  2022 me_00020000.so
+-rwxrwxr-x 1 root root 18144 Aug 10  2022 me_00040000.so
+-rwxrwxr-x 1 root root 18407 Aug 10  2022 me_00080000.so
+-rwxrwxr-x 1 root root 17651 Aug 10  2022 me_00400000.so
+-rwxrwxr-x 1 root root 17921 Aug 10  2022 rdp_00000001.so
+-rwxrwxr-x 1 root root 17633 Aug 10  2022 rdp_00000004.so
+-rwxrwxr-x 1 root root 17968 Aug 10  2022 rdp_00000008.so
+-rwxrwxr-x 1 root root 17950 Aug 10  2022 rdp_00000010.so
+
+./lib/modules:
+total 460
+drwxrwxr-x 4 root root    311 Aug 10  2022 4.4.140
+-rw-rw-r-- 1 root root  17236 Aug 10  2022 epon_drv.ko
+-rw-rw-r-- 1 root root   5564 Aug 10  2022 epon_mpcp.ko
+-rw-rw-r-- 1 root root   7720 Aug 10  2022 epon_polling.ko
+-rwxrwxr-x 1 root root 182416 Aug 10  2022 europa_drv.ko
+drwxrwxr-x 2 root root    241 Aug 10  2022 features
+-rw-rw-r-- 1 root root  86076 Aug 10  2022 omcidrv.ko
+-rw-rw-r-- 1 root root  98120 Aug 10  2022 pf_rt_fc.ko
+-rw-rw-r-- 1 root root  72132 Aug 10  2022 rtk_tr142.ko
+
+./lib/modules/4.4.140:
+total 24
+drwxrwxr-x 2 root root    3 Aug 10  2022 extra
+drwxrwxr-x 3 root root   30 Aug 10  2022 kernel
+-rw-r--r-- 1 root root   45 Aug 10  2022 modules.alias
+-rw-r--r-- 1 root root   12 Aug 10  2022 modules.alias.bin
+-rw-rw-r-- 1 root root 7726 Aug 10  2022 modules.builtin
+-rw-r--r-- 1 root root 9569 Aug 10  2022 modules.builtin.bin
+-rw-r--r-- 1 root root  423 Aug 10  2022 modules.dep
+-rw-r--r-- 1 root root  632 Aug 10  2022 modules.dep.bin
+-rw-r--r-- 1 root root   52 Aug 10  2022 modules.devname
+-rw-rw-r-- 1 root root  418 Aug 10  2022 modules.order
+-rw-r--r-- 1 root root  131 Aug 10  2022 modules.softdep
+-rw-r--r-- 1 root root 1015 Aug 10  2022 modules.symbols
+-rw-r--r-- 1 root root 1152 Aug 10  2022 modules.symbols.bin
+lrwxrwxrwx 1 root root   39 Aug 10  2022 source -> /home/lzj/9607C/290_CKD/sdk/linux-4.4.x
+
+./lib/modules/4.4.140/extra:
+total 0
+
+./lib/modules/4.4.140/kernel:
+total 0
+drwxrwxr-x 3 root root 26 Aug 10  2022 drivers
+
+./lib/modules/4.4.140/kernel/drivers:
+total 0
+drwxrwxr-x 3 root root 31 Aug 10  2022 net
+
+./lib/modules/4.4.140/kernel/drivers/net:
+total 0
+drwxrwxr-x 3 root root 30 Aug 10  2022 ethernet
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet:
+total 0
+drwxrwxr-x 3 root root 31 Aug 10  2022 realtek
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek:
+total 0
+drwxrwxr-x 4 root root 48 Aug 10  2022 rtl86900
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900:
+total 0
+drwxrwxr-x 2 root root 39 Aug 10  2022 igmpHookModule
+drwxrwxr-x 3 root root 26 Aug 10  2022 sdk
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/igmpHookModule:
+total 194
+-rw-rw-r-- 1 root root 198644 Aug 10  2022 rtk_igmp_hook.ko
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk:
+total 0
+drwxrwxr-x 3 root root 29 Aug 10  2022 src
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src:
+total 0
+drwxrwxr-x 6 root root 90 Aug 10  2022 module
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module:
+total 0
+drwxrwxr-x 2 root root 35 Aug 10  2022 ds_pkt_bcaster
+drwxrwxr-x 2 root root 34 Aug 10  2022 epon_drv
+drwxrwxr-x 2 root root 35 Aug 10  2022 epon_mpcp
+drwxrwxr-x 2 root root 38 Aug 10  2022 epon_polling
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/ds_pkt_bcaster:
+total 25
+-rw-rw-r-- 1 root root 24996 Aug 10  2022 dpbcaster.ko
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_drv:
+total 17
+-rw-rw-r-- 1 root root 17236 Aug 10  2022 epon_drv.ko
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_mpcp:
+total 6
+-rw-rw-r-- 1 root root 5564 Aug 10  2022 epon_mpcp.ko
+
+./lib/modules/4.4.140/kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_polling:
+total 8
+-rw-rw-r-- 1 root root 7720 Aug 10  2022 epon_polling.ko
+
+./lib/modules/features:
+total 54
+-rw-rw-r-- 1 root root 6856 Aug 10  2022 bdp_00000001.ko
+-rw-rw-r-- 1 root root 3764 Aug 10  2022 bdp_00000002.ko
+-rw-rw-r-- 1 root root 9628 Aug 10  2022 bdp_00000010.ko
+-rw-rw-r-- 1 root root 7836 Aug 10  2022 bdp_00000100.ko
+-rw-rw-r-- 1 root root 3680 Aug 10  2022 bdp_00000800.ko
+-rw-rw-r-- 1 root root 3952 Aug 10  2022 me_00000001.ko
+-rw-rw-r-- 1 root root 3676 Aug 10  2022 me_00000200.ko
+-rw-rw-r-- 1 root root 4416 Aug 10  2022 me_00020000.ko
+-rw-rw-r-- 1 root root 4124 Aug 10  2022 me_00100000.ko
+-rw-rw-r-- 1 root root 3668 Aug 10  2022 rdp_00000002.ko
+
+./lib/omci:
+total 2631
+-rwxrwxr-x 1 root root 64580 Aug 10  2022 mib_Anig.so
+-rwxrwxr-x 1 root root 18663 Aug 10  2022 mib_Authen_Sec_Method.so
+-rwxrwxr-x 1 root root 26345 Aug 10  2022 mib_CallControlPerformanceMonitoringHistoryData.so
+-rwxrwxr-x 1 root root 22367 Aug 10  2022 mib_Cardholder.so
+-rwxrwxr-x 1 root root 23691 Aug 10  2022 mib_CircuitPack.so
+-rwxrwxr-x 1 root root 21725 Aug 10  2022 mib_Cuc_OnuCapability.so
+-rwxrwxr-x 1 root root 21794 Aug 10  2022 mib_Cuc_OnuOpticalTransceiversInfo.so
+-rwxrwxr-x 1 root root 21670 Aug 10  2022 mib_Dot1RateLimiter.so
+-rwxrwxr-x 1 root root 35336 Aug 10  2022 mib_EnhancedSecCtl.so
+-rwxrwxr-x 1 root root 34755 Aug 10  2022 mib_EthExtPmData64Bit.so
+-rwxrwxr-x 1 root root 30900 Aug 10  2022 mib_EthExtPmData.so
+-rwxrwxr-x 1 root root 22346 Aug 10  2022 mib_EthPmData2.so
+-rwxrwxr-x 1 root root 26203 Aug 10  2022 mib_EthPmData3.so
+-rwxrwxr-x 1 root root 26229 Aug 10  2022 mib_EthPmDataDs.so
+-rwxrwxr-x 1 root root 26229 Aug 10  2022 mib_EthPmDataUs.so
+-rwxrwxr-x 1 root root 26237 Aug 10  2022 mib_EthPmHistoryData.so
+-rwxrwxr-x 1 root root 32357 Aug 10  2022 mib_EthUni.so
+-rwxrwxr-x 1 root root 21763 Aug 10  2022 mib_ExtendedIpHostCfgData.so
+-rwxrwxr-x 1 root root 34932 Aug 10  2022 mib_ExtendedMcastOperProf.so
+-rwxrwxr-x 1 root root 18443 Aug 10  2022 mib_ExtendedOnuG.so
+-rwxrwxr-x 1 root root 21594 Aug 10  2022 mib_ExtendedOnuGZTE.so
+-rwxrwxr-x 1 root root 21465 Aug 10  2022 mib_ExtendOnt2Ability.so
+-rwxrwxr-x 1 root root 26704 Aug 10  2022 mib_ExtVlanTagOperCfgData.so
+-rwxrwxr-x 1 root root 22855 Aug 10  2022 mib_FecPMHD.so
+-rwxrwxr-x 1 root root 18639 Aug 10  2022 mib_GalEthProf.so
+-rwxrwxr-x 1 root root 26889 Aug 10  2022 mib_GemIwTp.so
+-rwxrwxr-x 1 root root 27660 Aug 10  2022 mib_GemPortCtp.so
+-rwxrwxr-x 1 root root 23257 Aug 10  2022 mib_GemPortNetworkCtpPMHD.so
+-rwxrwxr-x 1 root root 32051 Aug 10  2022 mib_GemPortPMHD.so
+-rwxrwxr-x 1 root root 21592 Aug 10  2022 mib_GemTrafficDescriptor.so
+-rwxrwxr-x 1 root root 22608 Aug 10  2022 mib_GeneralPurposeBuffer.so
+-rwxrwxr-x 1 root root 26629 Aug 10  2022 mib_GenericPortal.so
+-rwxrwxr-x 1 root root 26390 Aug 10  2022 mib_GenexisEthPMHD4.so
+-rwxrwxr-x 1 root root 21763 Aug 10  2022 mib_HwPrivatePppoeCfgData.so
+-rwxrwxr-x 1 root root 26779 Aug 10  2022 mib_IpHostConfigData.so
+-rwxrwxr-x 1 root root 21636 Aug 10  2022 mib_LargeString.so
+-rwxrwxr-x 1 root root 18551 Aug 10  2022 mib_LctUni.so
+-rwxrwxr-x 1 root root 21689 Aug 10  2022 mib_LoidAuth.so
+-rwxrwxr-x 1 root root 22003 Aug 10  2022 mib_LoopDetect.so
+-rwxrwxr-x 1 root root 21646 Aug 10  2022 mib_MacBridgePortFilterPreassign.so
+-rwxrwxr-x 1 root root 26392 Aug 10  2022 mib_MacBridgePortFilterTable.so
+-rwxrwxr-x 1 root root 23877 Aug 10  2022 mib_MacBridgePortPmMonitorHistoryData.so
+-rwxrwxr-x 1 root root 21916 Aug 10  2022 mib_MacBriPortBriTblData.so
+-rwxrwxr-x 1 root root 36042 Aug 10  2022 mib_MacBriPortCfgData.so
+-rwxrwxr-x 1 root root 23050 Aug 10  2022 mib_MacBriServProf.so
+-rwxrwxr-x 1 root root 31252 Aug 10  2022 mib_Map8021pServProf.so
+-rwxrwxr-x 1 root root 40268 Aug 10  2022 mib_McastOperProf.so
+-rwxrwxr-x 1 root root 36242 Aug 10  2022 mib_McastSubConfInfo.so
+-rwxrwxr-x 1 root root 25924 Aug 10  2022 mib_McastSubMonitor.so
+-rwxrwxr-x 1 root root 22204 Aug 10  2022 mib_Me242.so
+-rwxrwxr-x 1 root root 18530 Aug 10  2022 mib_Me243.so
+-rwxrwxr-x 1 root root 23298 Aug 10  2022 mib_Me350.so
+-rwxrwxr-x 1 root root 22153 Aug 10  2022 mib_Me370.so
+-rwxrwxr-x 1 root root 21738 Aug 10  2022 mib_Me373.so
+-rwxrwxr-x 1 root root 23199 Aug 10  2022 mib_Me65305.so
+-rwxrwxr-x 1 root root 36240 Aug 10  2022 mib_MeZteSntp.so
+-rwxrwxr-x 1 root root 21407 Aug 10  2022 mib_MgcCfgData.so
+-rwxrwxr-x 1 root root 19046 Aug 10  2022 mib_MGCConfigPortal.so
+-rwxrwxr-x 1 root root 32906 Aug 10  2022 mib_MultiGemIwTp.so
+-rwxrwxr-x 1 root root 18327 Aug 10  2022 mib_Network_addr.so
+-rwxrwxr-x 1 root root 21945 Aug 10  2022 mib_NetworkDialPlanTable.so
+-rwxrwxr-x 1 root root 21368 Aug 10  2022 mib_OctetString.so
+-rwxrwxr-x 1 root root 21487 Aug 10  2022 mib_OltG.so
+-rwxrwxr-x 1 root root 19241 Aug 10  2022 mib_OltLocationCfgData.so
+-rwxrwxr-x 1 root root 21945 Aug 10  2022 mib_Omci.so
+-rwxrwxr-x 1 root root 21653 Aug 10  2022 mib_Ont2g.so
+-rwxrwxr-x 1 root root 18854 Aug 10  2022 mib_OntData.so
+-rwxrwxr-x 1 root root 26293 Aug 10  2022 mib_Ontg.so
+-rwxrwxr-x 1 root root 22053 Aug 10  2022 mib_OntSelfLoopDetect.so
+-rwxrwxr-x 1 root root 21801 Aug 10  2022 mib_OntSystemMgmt.so
+-rwxrwxr-x 1 root root 18601 Aug 10  2022 mib_OnuCapability.so
+-rwxrwxr-x 1 root root 22858 Aug 10  2022 mib_OnuLoopDetection.so
+-rwxrwxr-x 1 root root 21459 Aug 10  2022 mib_OnuPwrShedding.so
+-rwxrwxr-x 1 root root 21762 Aug 10  2022 mib_OnuRemoteDbg.so
+-rwxrwxr-x 1 root root 21598 Aug 10  2022 mib_PhysicalPathTerminationPointISDNUNI.so
+-rwxrwxr-x 1 root root 26352 Aug 10  2022 mib_PotsUni.so
+-rwxrwxr-x 1 root root 21716 Aug 10  2022 mib_Pptp80211Uni.so
+-rwxrwxr-x 1 root root 22231 Aug 10  2022 mib_PptpVideoAni.so
+-rwxrwxr-x 1 root root 22220 Aug 10  2022 mib_PptpVideoUni.so
+-rwxrwxr-x 1 root root 22932 Aug 10  2022 mib_PriQ.so
+-rwxrwxr-x 1 root root 26330 Aug 10  2022 mib_PrivateTellionOntStatistics.so
+-rwxrwxr-x 1 root root 18891 Aug 10  2022 mib_PrivateTqCfg.so
+-rwxrwxr-x 1 root root 21655 Aug 10  2022 mib_PrivateVlanCfg.so
+-rwxrwxr-x 1 root root 21556 Aug 10  2022 mib_PseudowireMaintenanceProfile.so
+-rwxrwxr-x 1 root root 26335 Aug 10  2022 mib_RTPPerformanceMonitoringHistoryData.so
+-rwxrwxr-x 1 root root 21472 Aug 10  2022 mib_RTPProfileData.so
+-rwxrwxr-x 1 root root 21526 Aug 10  2022 mib_RTPPseudowireParameters.so
+-rwxrwxr-x 1 root root 18809 Aug 10  2022 mib_Scheduler.so
+-rwxrwxr-x 1 root root 21739 Aug 10  2022 mib_SIPAgentConfigData.so
+-rwxrwxr-x 1 root root 26385 Aug 10  2022 mib_SIPAgentPerformanceMonitoringHistoryData.so
+-rwxrwxr-x 1 root root 26478 Aug 10  2022 mib_SIPCallInitiationPerformanceMonitoringHistoryData.so
+-rwxrwxr-x 1 root root 19126 Aug 10  2022 mib_SIPConfigPortal.so
+-rwxrwxr-x 1 root root 21557 Aug 10  2022 mib_SIPUserData.so
+-rwxrwxr-x 1 root root 21713 Aug 10  2022 mib_SWImage.so
+-rwxrwxr-x 1 root root 19159 Aug 10  2022 mib_Tcont.so
+-rwxrwxr-x 1 root root 18515 Aug 10  2022 mib_TcpUdpCfgData.so
+-rwxrwxr-x 1 root root 19239 Aug 10  2022 mib_ThresholdData1.so
+-rwxrwxr-x 1 root root 21431 Aug 10  2022 mib_ThresholdData2.so
+-rwxrwxr-x 1 root root 21671 Aug 10  2022 mib_TR069ManageServer.so
+-rwxrwxr-x 1 root root 18570 Aug 10  2022 mib_Unig.so
+-rwxrwxr-x 1 root root 27097 Aug 10  2022 mib_VEIP.so
+-rwxrwxr-x 1 root root 22016 Aug 10  2022 mib_VlanTagFilterData.so
+-rwxrwxr-x 1 root root 21915 Aug 10  2022 mib_VlanTagOpCfgData.so
+-rwxrwxr-x 1 root root 21502 Aug 10  2022 mib_VoiceServiceProfile.so
+-rwxrwxr-x 1 root root 21637 Aug 10  2022 mib_VoIPApplicationServiceProfile.so
+-rwxrwxr-x 1 root root 22261 Aug 10  2022 mib_VoIPConfigData.so
+-rwxrwxr-x 1 root root 21520 Aug 10  2022 mib_VoIPFeatureAccessCodes.so
+-rwxrwxr-x 1 root root 18610 Aug 10  2022 mib_VoipImage.so
+-rwxrwxr-x 1 root root 22382 Aug 10  2022 mib_VoIPLineStatus.so
+-rwxrwxr-x 1 root root 21559 Aug 10  2022 mib_VoIPMediaProfile.so
+-rwxrwxr-x 1 root root 19276 Aug 10  2022 mib_VoIPVoiceCTP.so
+
+./lib/voip:
+total 89
+-rwxrwxr-x 1 root root 38737 Aug 10  2022 omci_voice_util.so
+-rwxrwxr-x 1 root root 51661 Aug 10  2022 voice_rtk_wrapper.so
+
+./overlay:
+total 0
+
+./proc:
+total 0
+
+./run:
+total 0
+
+./sys:
+total 0
+
+./usr:
+total 0
+drwxrwxr-x 2 root root 3 Aug 10  2022 local
+
+./usr/local:
+total 0
+
+./var:
+total 0
