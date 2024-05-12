@@ -149,9 +149,3 @@ $ nc -lvnp {remote-port}
 
 - Launch the script
 - The reverse shell is up, we are root and the flag is in `root/flag.txt`
-
----
-
-## FLAGS
-
-ROOT: 9cdfb439c7876e703e307864c9167a15

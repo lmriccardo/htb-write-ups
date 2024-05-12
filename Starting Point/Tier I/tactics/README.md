@@ -111,9 +111,3 @@ $ cat flag.txt
 ```
 $ sudo impacket-psexec Administrator@{IP}
 ```
-
----
-
-## FLAGS
-
-ROOT: f751c19eda8f61ce81827e6930a1f40c

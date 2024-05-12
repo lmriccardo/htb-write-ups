@@ -357,7 +357,7 @@ $ ssh joanna@{IP} -i joanna_id_rsa
 Enter Passphrase: bloodninjas
 
 joanna@openadmin:~$ cat user.txt
-ebdc34f11f2cb725b7808ce895931056
+<USER-FLAG>
 
 joanna@openadmin:~$ sudo -l
 ...
@@ -368,11 +368,3 @@ joanna@openadmin:~$ sudo /bin/nano /opt/priv
 ```
 
 - Inside the nano editor press `SHIFT+R` and enter `/root/root.txt`
-
----
-
-## FLAGS
-
-USER: ebdc34f11f2cb725b7808ce895931056
-
-ROOT: b69ec7ebf447a7ba28b1313d2ff3640e

@@ -68,9 +68,3 @@ $ python solve.py
 ```
 
 - At the second attempt you will find the flag
-
----
-
-## FLAGS
-
-HTB{N1c3_ScrIpt1nG_B0i!}

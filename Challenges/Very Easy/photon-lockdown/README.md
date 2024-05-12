@@ -75,9 +75,3 @@ tmp/$ la -lhR
 <Value Name="SUSER_PASSWORD" Value="HTB{N0w_Y0u_C4n_L0g1n}"/>
 ...
 ```
-
----
-
-## FLAGS
-
-HTB{N0w_Y0u_C4n_L0g1n}

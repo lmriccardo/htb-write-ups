@@ -56,9 +56,3 @@ Uh5BE
 > and should returns 0 if the two are equal, another value if they are not. 
 > If the two are not equal it jumps to `0x00454144` and print `Wrong Password`
 > otherwise go on and print `Good Job. Congratulations`
-
----
-
-## FLAGS
-
-HTB{fortran!}

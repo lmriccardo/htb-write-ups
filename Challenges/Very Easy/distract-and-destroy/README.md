@@ -141,9 +141,3 @@ $ cast send $target "loot()" --private-key $key --rpc-url http://{IP}:{port}/rpc
 ```
 
 - Visit the `http://{IP}:{port}/flag` page to obtain the flag
-
----
-
-## FLAG
-
-HTB{tx.0r1gin_c4n_74k3_d0wn_4_m0n5732}

@@ -279,7 +279,7 @@ Mode                LastWriteTime         Length Name
 -ar---        4/30/2024   9:13 PM             34 user.txt
 
 *Evil-WinRM* PS C:\Users\Chase\Desktop> more user.txt
-6bab43614d5901c32e6bd9e16e40c1fd
+<USER-FLAG>
 ```
 
 ---
@@ -424,13 +424,5 @@ C:\Users\Administrator\Desktop> dir
                2 Dir(s)   3,211,763,712 bytes free
 
 C:\Users\Administrator\Desktop> more root.txt
-c77cfc252ee172361655bf4470304d24
+<ROOT-FLAG>
 ```
-
----
-
-## FLAGS
-
-USER: 6bab43614d5901c32e6bd9e16e40c1fd
-
-ROOT: c77cfc252ee172361655bf4470304d24

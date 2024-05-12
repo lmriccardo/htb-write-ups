@@ -237,7 +237,7 @@ www-data@base:/var/www/html$ su john
 Password: thisisagoodpassword
 
 john@base:/var/www/html$ cat /home/john/user.txt
-f54846c258f3b4612f78a819573d158e
+<USER-FLAG>
 ```
 
 - At this point we can disconnect and connect with SSH
@@ -263,13 +263,5 @@ User john may run the following commands on base:
 
 ```bash
 john@base:~$ sudo find /root/ -regex '.*\.txt' -exec cat {} \;
-51709519ea18ab37dd6fc58096bea949
+<ROOT-FLAG>
 ```
-
----
-
-## FLAGS
-
-USER: f54846c258f3b4612f78a819573d158e
-
-ROOT: 51709519ea18ab37dd6fc58096bea949

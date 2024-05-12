@@ -241,7 +241,6 @@ www-data@included:/home/mike$ su mike
 Password: Sheffield19
 
 mike@included:~$ cat user.txt
-a56ef91d70cfbf2cdb8f454c006935a1
 ```
 
 - At this point we need to become root user
@@ -294,13 +293,4 @@ uid=0(root) gid=0(root)
 /mnt/root# ls
 root.txt
 /mnt/root# cat root.txt
-c693d9c7499d9f572ee375d4c14c7bcf
 ```
-
----
-
-## FLAGS
-
-USER: a56ef91d70cfbf2cdb8f454c006935a1
-
-ROOT: c693d9c7499d9f572ee375d4c14c7bcf

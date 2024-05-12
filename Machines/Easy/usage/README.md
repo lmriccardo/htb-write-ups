@@ -318,7 +318,7 @@ dash
 dash@usage:~$ pwd
 /home/dash
 dash@usage:~$ cat user.txt
-5d754cabaff1692ebfd8288f6862397c
+<USER-FLAG>
 dash@usage:~$ cat .ssh/id_rsa
 
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -496,13 +496,5 @@ H2sfTWZeFDLGmqMhrqDdAAAACnJvb3RAdXNhZ2UBAgM= : No more files
 ```bash
 $ ssh root@{IP} -i id_rsa_root
 root@usage:~# cat root.txt
-c515a983b3d5f5763fdc1c2bdb90e757
+<ROOT-FLAG>
 ```
-
----
-
-## FLAGS
-
-USER: 5d754cabaff1692ebfd8288f6862397c
-
-ROOT: c515a983b3d5f5763fdc1c2bdb90e757

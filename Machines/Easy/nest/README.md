@@ -480,13 +480,5 @@ smb: \> cd Users\Administrator\Desktop\
 smb: \Users\Administrator\DEsktop\> get root.txt
 smb: \Users\Administrator\DEsktop\> exit
 $ cat root.txt
-deb3dfe1f1ab3470049665f5b5c2c5e5
+<ROOT-FLAG>
 ```
-
----
-
-## FLAGS
-
-USER: aac7dba51b0934b8745f36cd2b5f1f14
-
-ROOT: deb3dfe1f1ab3470049665f5b5c2c5e5
